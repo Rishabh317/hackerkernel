@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: Comfortaa;
+}
+
+#back{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #192c3f;
+    padding: 0px 40px 0px 90px;
+    
+
+}
+#backleft{
+    width: 48%;
+    height: 100%;
+    color: rgb(226, 224, 224);
+    /* background-color: green; */
+    
+}
+#backleft img{
+    width: 400px;
+    height:400px;
+    margin-top: 70px;
+}
+#backleft h3 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 80px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+#backleft p{
+    letter-spacing: 1px;
+    white-space: 3px;
+    line-height: 20px;
+    font-size: 12px;
+    margin-left: 80px;
+}
+#backright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 90px 20px;
+    width: 30%;
+    height: 85%;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #192c3f;
+}
+#backright  #links a{
+    text-decoration: none;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid black;
+    font-size: 15px;
+}
+#backright #links a:nth-child(2){
+    padding: 10px 19px;
+    border-bottom: 2px solid rgb(216, 215, 215);
+    
+}
+
+#backright  form{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#backright form #inputfield{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+}
+
+#backright form h4{
+    font-size: 12px;
+    flex-direction: column;
+    display: flex;
+    /* justify-content: space-between; */
+    
+}
+
+#backright form h4 input{
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    border:.5px solid rgb(97, 97, 97);
+    outline: none;
+    margin-top : 5px;
+    padding: 0 20px;
+}
+
+#backright form h4 p{
+    margin:   8px 0 0 210px;
+    font-size: 10px;
+}
+
+#backright form #login{
+    flex-direction: column;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    /* background-color: red; */
+    
+}
+
+#backright form  button{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background:#192c3f;
+    outline: none;
+    color: white;
+    cursor: pointer; 
+}
+#backright form  #login{
+    font-size: 10px;
+    opacity: .8;
+    color: #192c3f;
+
+}
+
+
+@media(max-width:600px){
+    #back{
+        flex-direction: column;
+        padding: 0;
+        height: 125%;
+    }
+
+    #backleft{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 600px;
+    }
+
+    #backleft h3{
+        margin-left: 0;
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    #backleft p{
+        font-size: 10px;
+        margin-left: 0;
+        line-height: 15px;
+        text-align: center;
+    }
+    #backleft img{
+
+        padding: 0px;
+        width: 200px;
+        height: 200px;
+    
+    }
+
+    #backright{
+        height: 450px;
+        width: 90%;
+        margin-top: 30px;
+        padding: 30px 0px;
+        margin-bottom: 20px;
+    }
+    #backright #links a{
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    #backright form{
+        margin-top: 30px;
+    }
+    #backright form  h4{
+       width: 250px;
+       
+       padding: 0; 
+    }
+    #backright form  h4 p{
+        font-size: 8px;
+        margin: 10px 0 0 175px;
+    }
+    #backright form  h4 input{
+        width: 250px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        /* padding: 0; */
+    }
+    #backright form #login{
+        width: 280px;
+        display: flex;
+        align-items: center;
+    }
+    
+    
+}
